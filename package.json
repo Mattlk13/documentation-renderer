@@ -14,12 +14,18 @@
     "underscore.string": "2.3.x",
     "coffee-script": "~ 1.6.3",
     "jquery": "2.1.x",
-    "grunt": "~0.4.1",
-    "grunt-cli": "~0.1.9",
+    "grunt": "~1.0.0",
+    "grunt-cli": "~1.0.0",
     "grunt-contrib-coffee": "~0.7.0",
     "grunt-contrib-less": "~0.5.1",
-    "grunt-browserify": "~2.0.1",
+    "grunt-browserify": "~3.7.0",
     "grunt-text-replace": "0.3.x",
-    "grunt-contrib-compress": "0.7.x"
-  }
+    "grunt-contrib-compress": "0.7.x",
+    "snyk": "^1.105.0"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
+  },
+  "snyk": true
 }
